@@ -723,6 +723,7 @@ section.section_last>div.form>div:nth-child(2)>form>div>p {
     bottom: -166px;
     outline: none;
     z-index: 30;
+    cursor: pointer;
 }
 
 #checkbox {
@@ -733,6 +734,7 @@ section.section_last>div.form>div:nth-child(2)>form>div>p {
     height: 24px;
     opacity: 0;
     z-index: 30;
+    cursor: pointer;
 }
 
 /*checkmark*/

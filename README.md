@@ -8,4 +8,4 @@ RWD Workshop - website template - HTML/SASS
 - JavaScript
 
 ## Preview:
-Check the preview of the website here: *https://kacpermak1.github.io/WORKSHOP_RWD_SASS/*
+Check the preview of the website here: *https://kacpermak1.github.io/BestShop_RWD_HTML_SASS/*

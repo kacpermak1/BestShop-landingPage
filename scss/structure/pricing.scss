@@ -1,0 +1,233 @@
+.section_pricing {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-background;
+  ul {
+    list-style: url(../assets/Ckechmark-1.svg);
+    list-style-position: inside;
+    text-align: center;
+    .cross {
+      list-style: url(../assets/Close.svg);
+      list-style-position: inside;
+    }
+    li {
+      font-family: $main-font-one;
+      font-size: 14px;
+      font-weight: normal;
+      padding-bottom: 26px;
+      padding-left: 7px;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    color: $color-background;
+    font-size: 13px;
+    font-family: $main-font-one;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  h3 {
+    font-family: $main-font-two;
+    font-size: 21px;
+    font-weight: 700;
+    padding-bottom: 14px;
+    color: var(--color-dark);
+  }
+  h5 {
+    font-family: $main-font-two;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    color: var(--color-dark);
+  }
+  p {
+    font-family: $main-font-one;
+    font-size: 46px;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+  div {
+    margin: 20px;
+    .option_top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+  }
+  .basic {
+    width: 24%;
+    height: 450px;
+    border: 1px solid $color-secondMain;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    h5 {
+      visibility: hidden;
+    }
+    a {
+      background-color: $color-secondMain;
+      width: 150px;
+      height: 50px;
+      bottom: -25px;
+      position: absolute;
+    }
+    p {
+      color: $color-secondMain;
+    }
+  }
+  .professional {
+    width: 32%;
+    height: 500px;
+    border: 1px solid $color-headButton;
+    box-shadow: 5px 10px 27px $color-shadowButton;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &::before {
+      content: "Pricing";
+      position: absolute;
+      top: -90px;
+      text-align: center;
+      font-size: 36px;
+      font-family: $main-font-two;
+      font-weight: normal;
+    }
+    a {
+      background-color: $color-headButton;
+      width: 165px;
+      height: 50px;
+      bottom: -25px;
+      position: absolute;
+      z-index: 5;
+    }
+    p {
+      color: $color-headButton;
+    }
+  }
+  .premium {
+    width: 24%;
+    height: 450px;
+    border: 1px solid $color-thirdMain;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    a {
+      background-color: $color-thirdMain;
+      width: 150px;
+      height: 50px;
+      bottom: -25px;
+      position: absolute;
+    }
+    p {
+      color: $color-thirdMain;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .section_pricing {
+    height: 1200px;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    ul {
+      text-align: left;
+      width: 180px;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      li {
+        width: 100%;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 12px;
+        padding-left: 0;
+      }
+    }
+    .option_top {
+      width: 140px;
+      height: 140px;
+      margin-left: 10px;
+    }
+    .basic {
+      width: 300px;
+      height: 300px;
+      flex-direction: row;
+      &::before {
+        content: "Pricing";
+        position: absolute;
+        top: -80px;
+        text-align: center;
+        font-size: 36px;
+        font-family: $main-font-two;
+        font-weight: normal;
+      }
+      a {
+        width: 150px;
+        height: 50px;
+        bottom: -25px;
+        left: 75px;
+        position: absolute;
+      }
+      ul{
+          width:220px;
+          margin-right: 20px;
+      }
+    }
+    .professional {
+      width: 330px;
+      height: 300px;
+      flex-direction: row;
+      &::before {
+        content: "";
+      }
+      ul {
+        width: 140px;
+        margin-left: 10px;
+      }
+      a {
+        width: 165px;
+        height: 50px;
+        bottom: -25px;
+        left: 82.5px;
+        position: absolute;
+        z-index: 5;
+      }
+    }.premium {
+        width: 300px;
+        height: 300px;
+        flex-direction: row;
+        a {
+          width: 150px;
+          height: 50px;
+          bottom: -25px;
+          left: 75px;
+          position: absolute;
+        }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+.form {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  background-color: $color-background;
+  div {
+    width: 35%;
+    height: 90%;
+    overflow: auto;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-family: $main-font-one;
+    color: $color-mainText;
+    margin-bottom: 42px;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-family: $main-font-two;
+    font-size: 49px;
+    font-weight: normal;
+    margin-bottom: 22px;
+    color: $color-mainText;
+  }
+  ul {
+    display: flex;
+    color: $color-navMenuText;
+    font-family: $main-font-one;
+    font-weight: 400;
+    font-size: 16px;
+    list-style: none;
+    overflow: auto;
+    li {
+      margin-right: 24px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  label {
+    font-family: $main-font-one;
+    font-weight: bold;
+    font-size: 11px;
+    color: $color-headButton;
+    letter-spacing: 3.28px;
+  }
+  img {
+    margin-right: 10px;
+  }
+  button {
+    width: 226px;
+    height: 55px;
+    background: $color-headButton;
+    border-radius: 35px;
+    box-shadow: 4px 10px 14px $color-shadowButton;
+    padding: 0;
+    border: none;
+    color: $color-background;
+    font-family: $main-font-one;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    bottom: -166px;
+    outline: none;
+    z-index: 30;
+    cursor: pointer;
+  }
+  input.line {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid $color-shadowMain;
+    background: transparent;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+  }
+}
+
+body > section.section_last > div.form > div:nth-child(2) {
+  padding-right: 10px;
+}
+
+body > div.form > div:nth-child(2) > form > div > p {
+  font-size: 12px;
+  width: 93%;
+  height: 60%;
+  text-align: left;
+  color: $color-formText;
+  font-family: $main-font-one;
+  position: absolute;
+  right: 0px;
+}
+
+.checkbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: auto;
+  p {
+    display: block;
+  }
+  input {
+    display: block;
+  }
+}
+
+#checkbox {
+  position: absolute;
+  left: 0px;
+  bottom: -24px;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  z-index: 30;
+  cursor: pointer;
+}
+
+/*checkmark*/
+
+.checkmark {
+  position: absolute;
+  left: 0px;
+  bottom: -24px;
+  height: 24px;
+  width: 24px;
+  background: $color-background 0% 0% no-repeat padding-box;
+  border: 1px solid $color-formShadow;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.checkmark:after {
+  content: "";
+  background-image: url("../assets/Checkmark.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  display: none;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .form {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .checkbox{
+        margin-top:20px;
+    }
+    div {
+        width: 100%;
+        height: 70%;
+        padding: 5px;
+        li{
+            margin-right:14px;
+        }
+      }
+      div:nth-child(1){
+          height: 24%;
+          display:flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-bottom:50px;
+      }
+  }
+  body > div.form > div:nth-child(2) > form > div > p {
+    width: 90%;
+    height: 70%;
+  }
+}

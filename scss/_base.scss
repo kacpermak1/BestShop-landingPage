@@ -1,0 +1,14 @@
+html {
+    font-size: 16px;
+    font-family: $main-font-one;
+  }
+  
+  body {
+    width: 100%;
+    background-color: $color-base;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin:0 auto;
+  }

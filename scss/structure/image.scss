@@ -1,0 +1,20 @@
+.image {
+  background-image: url(../assets/Background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 380px;
+  border: none;
+  background-color: $color-background;
+}
+
+@media (max-width: 640px) {
+  .image {
+    max-width: 100vw;
+    background-size: 800px;
+    background-position: center;
+    height: 220px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,319 @@
+.section_second {
+  width: 100%;
+  height: 1395px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  padding: 100px 0 100px 0;
+  div {
+    width: 100%;
+    height: 370px;
+    background-color: $color-background;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  .info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-left: 35px;
+    padding-right: 20px;
+    h2 {
+      font-family: $main-font-two;
+      font-size: 36px;
+      padding-bottom: 30px;
+      font-weight: 400;
+    }
+    p {
+      position: relative;
+      font-family: $main-font-one;
+      font-size: 16px;
+    }
+  }
+}
+
+body > section.section_second > div:nth-child(3) > div:nth-child(1) {
+  width: 55%;
+  height: 100%;
+  background-color: $color-background;
+}
+
+body > section.section_second > div:nth-child(3) > div:nth-child(2) {
+  width: 40%;
+  height: 100%;
+  background-color: $color-thirdMain;
+}
+
+body > section.section_second > div:nth-child(2) > div.info {
+  padding-left: 170px;
+}
+
+.section_second .info p::after {
+  bottom: -50px;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  width: 60%;
+}
+
+section.section_second > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+body > section.section_second > div:nth-child(1) > div:nth-child(2) > div {
+  width: 180px;
+  height: 180px;
+  background-color: $color-secondMain;
+  border-radius: 41px;
+  display: block;
+  background-repeat: no-repeat;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  right: 65px;
+  top: 80px;
+}
+
+body > section.section_second > div:nth-child(1) > div:nth-child(2)::after {
+  content: "";
+  width: 376px;
+  height: 219px;
+  background: url(../assets/Macbook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  right: 70px;
+  bottom: 35px;
+}
+
+body > section.section_second > div:nth-child(2) > div:nth-child(1) > div {
+  width: 320px;
+  height: 320px;
+  background-color: $color-headButton;
+  border-radius: 50%;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+body > section.section_second > div:nth-child(2) > div:nth-child(1)::after {
+  content: "";
+  width: 426px;
+  height: 328px;
+  background: url(../assets/iPhone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  z-index: 3;
+  position: absolute;
+  bottom: 0px;
+  right: -25px;
+}
+
+section.section_second > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+body > section.section_second > div:nth-child(3) > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > section.section_second > div:nth-child(3) > div:nth-child(2)::after {
+  content: "";
+  width: 75%;
+  height: 75%;
+  background: url(../assets/Trumpet.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  z-index: 3;
+  margin-top: 30px;
+}
+
+body > section.section_second > div:nth-child(3) {
+  background-color: $color-base;
+}
+
+body > section.section_second > div:nth-child(3) > div.info > p::after {
+  background-color: $color-thirdMain;
+}
+
+body > section.section_second > div:nth-child(1) > div.info > p::after {
+  background-color: $color-secondMain;
+}
+
+body > section.section_second > div:nth-child(2) > div.info > p::after {
+  background-color: $color-headButton;
+}
+
+@media (max-width: 640px) {
+  .section_second {
+    height: 2100px;
+    div {
+      height: 500px;
+      width: 90%;
+      background-color: $color-background;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      overflow: auto;
+      margin: 0;
+    }
+    .info {
+      height: 100%;
+      padding-left: 20px;
+    }
+  }
+
+  body > section.section_second > div:nth-child(3) > div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background-color: $color-background;
+  }
+
+  body > section.section_second > div:nth-child(3) > div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    background-color: $color-thirdMain;
+  }
+
+  .section_second .info h2 {
+    font-family: $main-font-two;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .section_second .info p {
+    position: relative;
+    font-family: $main-font-one;
+    font-size: 16px;
+  }
+
+  section.section_second > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  body > section.section_second > div:nth-child(1) > div:nth-child(2) > div {
+    width: 100px;
+    height: 100px;
+    background-color: $color-secondMain;
+    border-radius: 41px;
+    display: block;
+    background-repeat: no-repeat;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+
+  body > section.section_second > div:nth-child(1) > div:nth-child(2)::after {
+    content: "";
+    width: 220px;
+    height: 160px;
+    background: url(../assets/Macbook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 35px;
+  }
+
+  body > section.section_second > div:nth-child(2) > div:nth-child(1) > div {
+    width: 190px;
+    height: 190px;
+    background-color: $color-headButton;
+    border-radius: 50%;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  body > section.section_second > div:nth-child(2) > div:nth-child(1)::after {
+    content: "";
+    width: 220px;
+    height: 180px;
+    background: url(../assets/iPhone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    z-index: 3;
+    position: absolute;
+    bottom: 20px;
+    right: 55px;
+  }
+
+  section.section_second > div:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  body > section.section_second > div:nth-child(3) > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  body > section.section_second > div:nth-child(2) > div.info {
+    padding-left: 20px;
+  }
+
+  body > section.section_second > div:nth-child(3) > div:nth-child(2)::after {
+    content: "";
+    width: 75%;
+    height: 75%;
+    background: url(../assets/Trumpet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    z-index: 3;
+    margin-top: 30px;
+  }
+
+  .section_second .info p::after {
+    bottom: -50px;
+    content: none;
+    display: block;
+    height: 3px;
+    position: absolute;
+    width: 60%;
+  }
+
+  body > section.section_second > div:nth-child(2) {
+    flex-direction: column;
+    height: 600px;
+  }
+  body > section.section_second > div:nth-child(3) {
+    flex-direction: column;
+    height: 700px;
+  }
+}

@@ -5,6 +5,7 @@ RWD Workshop - website template - HTML/SASS
 - HTML
 - SCSS
 - JavaScript
+- Gulp
 
 ## Demo desktop
 
@@ -15,4 +16,4 @@ RWD Workshop - website template - HTML/SASS
 ![Bestshop Mobile Demo](demo/bstmobile.gif)
 
 ## Preview:
-Check the preview of the website here: *https://kacpermak1.github.io/BestShop_RWD_HTML_SASS/*
+Check the preview of the website here: *https://kacpermak1.github.io/BestShop-landingPage/*

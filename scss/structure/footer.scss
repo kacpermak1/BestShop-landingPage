@@ -1,57 +1,63 @@
 footer {
   width: 100%;
   height: 89px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   background: $color-footerMain 0% 0% no-repeat padding-box;
   box-shadow: 0px -5px 40px $color-shadowMain;
   opacity: 1;
-  .footer-div-one {
+  .container {
+    width: 100%;
     height: 100%;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 62px;
-    #footer-logo {
-      font-size: 26px;
-      text-decoration: none;
-      color: $color-headButton;
-      font-family: $main-font-two;
-      font-weight: 300;
-      margin-top: 18px;
-    }
-    p {
-      color: $color-navMenuText;
-      font-family: $main-font-one;
-      font-size: 11px;
-      margin-bottom: 20px;
-    }
-  }
-  .footer-icons {
-    height: 100%;
-    width: 20%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 60px;
-    img {
-      margin-left: 20px;
+    .footer-div-one {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 62px;
+      #footer-logo {
+        font-size: 26px;
+        text-decoration: none;
+        color: $color-headButton;
+        font-family: $main-font-two;
+        font-weight: 300;
+        margin-top: 18px;
+      }
+      p {
+        color: $color-navMenuText;
+        font-family: $main-font-one;
+        font-size: 11px;
+        margin-bottom: 20px;
+      }
+    }
+    .footer-icons {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 60px;
+      img {
+        margin-left: 20px;
+      }
     }
   }
 }
 
 @media (max-width: 640px) {
   footer {
-    .footer-div-one {
-      margin-left: 30px;
-      width:70%;
-    }
-    .footer-icons {
-      margin-right: 28px;
+    .container {
+      .footer-div-one {
+        margin-left: 30px;
+        width: 70%;
+      }
+      .footer-icons {
+        margin-right: 28px;
+      }
     }
   }
 }

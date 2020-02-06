@@ -14,21 +14,23 @@
 
 <body>
     <header>
-        <a href="#" class="page-logo">Best<span>Shop</span></a>
-        <ul class="page-nav-list">
-            <li><a href="#why_us">Why us</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#prices">Prices</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="button_close">
-            <div></div>
-            <div></div>
-        </div>
-        <div class="button_mobile">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="header__content">
+            <a href="#" class="page-logo">Best<span>Shop</span></a>
+            <ul class="page-nav-list">
+                <li><a href="#why_us">Why us</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="button_close">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="button_mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
     <section>
@@ -41,7 +43,7 @@
     <div class="image"></div>
     <section class="stats" id="why_us">
         <p><span>The most popular</span><span>sales platform in</span><span>country</span></p>
-        <div class="stats_div">
+        <div class="stats_div container">
             <div>
                 <div id="first"></div>
                 <p>100000+</p>
@@ -93,81 +95,86 @@
         </div>
     </section>
     <section class="section_pricing" id="prices">
-        <div class="basic">
-            <div class="option_top">
-                <h3>Basic</h3>
-                <p>$0</p>
+        <div class="container">
+            <div class="basic">
+                <div class="option_top">
+                    <h3>Basic</h3>
+                    <p>$0</p>
+                </div>
+                <h5 class="hid">limited offer</h5>
+                <ul>
+                    <li>100 MB HDD</li>
+                    <li>1 Subdomain</li>
+                    <li>2 E-mails</li>
+                    <li class="cross">2 years license</li>
+                    <li class="cross">Full support</li>
+                </ul>
+                <a href="#">Begin</a>
             </div>
-            <h5 class="hid">limited offer</h5>
-            <ul>
-                <li>100 MB HDD</li>
-                <li>1 Subdomain</li>
-                <li>2 E-mails</li>
-                <li class="cross">2 years license</li>
-                <li class="cross">Full support</li>
-            </ul>
-            <a href="#">Begin</a>
-        </div>
-        <div class="professional">
-            <div class="option_top">
-                <h3>Professional</h3>
-                <p>$25</p>
-                <h5>Limited offer</h5>
+            <div class="professional">
+                <div class="option_top">
+                    <h3>Professional</h3>
+                    <p>$25</p>
+                    <h5>Limited offer</h5>
+                </div>
+                <ul>
+                    <li>500 MB HDD</li>
+                    <li>2 Subdomains</li>
+                    <li>5 E-mails</li>
+                    <li>1 years license</li>
+                    <li class="cross">Full support</li>
+                </ul>
+                <a href="#">Begin</a>
             </div>
-            <ul>
-                <li>500 MB HDD</li>
-                <li>2 Subdomains</li>
-                <li>5 E-mails</li>
-                <li>1 years license</li>
-                <li class="cross">Full support</li>
-            </ul>
-            <a href="#">Begin</a>
-        </div>
-        <div class="premium">
-            <div class="option_top">
-                <h3>Premium</h3>
-                <p>$60</p>
-                <h5>Limited offer</h5>
+            <div class="premium">
+                <div class="option_top">
+                    <h3>Premium</h3>
+                    <p>$60</p>
+                    <h5>Limited offer</h5>
+                </div>
+                <ul>
+                    <li>2 GB HDD</li>
+                    <li>5 Subdomains</li>
+                    <li>20 E-mails</li>
+                    <li>2 years license</li>
+                    <li>Full support</li>
+                </ul>
+                <a href="#">Begin</a>
             </div>
-            <ul>
-                <li>2 GB HDD</li>
-                <li>5 Subdomains</li>
-                <li>20 E-mails</li>
-                <li>2 years license</li>
-                <li>Full support</li>
-            </ul>
-            <a href="#">Begin</a>
         </div>
     </section>
     <div class="form" id="contact">
-        <div>
-            <h2>Any questions?</h2>
-            <p>Leave your email address or call us!</p>
-            <ul>
-                <li><img src="assets/Mail Icon.svg">info@bestshop.xyz</li>
-                <li><img src="assets/Phone Icon.svg">123 456 789</li>
-            </ul>
-        </div>
-        <div>
-            <form>
-                <label>NAME</label>
-                <input class="line" type="text" name="NAME">
-                <label>EMAIL</label>
-                <input class="line" type="email" name="EMAIL">
-                <div class="checkbox">
-                    <input id="checkbox" type="checkbox" name="confirmation" value="Yes">
-                    <span class="checkmark"></span>
-                    <p>I hereby give consent for my personal data included in my application to be processed for the
-                        purposes of the recruitment process under the European Parliament’s and Council of the
-                        European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
-                        regard to the processing of personal data and on the free movement of such data, and
-                        repealing Directive 95/46/EC (Data Protection Directive)</p>
-                    <button type="submit">Send</button>
-                </div>
-            </form>
+        <div class="container">
+            <div class="form__left">
+                <h2>Any questions?</h2>
+                <p>Leave your email address or call us!</p>
+                <ul>
+                    <li><img src="assets/Mail Icon.svg">info@bestshop.xyz</li>
+                    <li><img src="assets/Phone Icon.svg">123 456 789</li>
+                </ul>
+            </div>
+            <div>
+                <form>
+                    <label>NAME</label>
+                    <input class="line" type="text" name="NAME">
+                    <label>EMAIL</label>
+                    <input class="line" type="email" name="EMAIL">
+                    <div class="checkbox">
+                        <input id="checkbox" type="checkbox" name="confirmation" value="Yes">
+                        <span class="checkmark"></span>
+                        <p>I hereby give consent for my personal data included in my application to be processed for the
+                            purposes of the recruitment process under the European Parliament’s and Council of the
+                            European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
+                            regard to the processing of personal data and on the free movement of such data, and
+                            repealing Directive 95/46/EC (Data Protection Directive)</p>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <footer>
+        <div class="container">
         <div class="footer-div-one">
             <a href="#" id="footer-logo">Best<span>Shop</span></a>
             <p>© 2019 BestShop LTD, All Rights Reserved</p>
@@ -176,6 +183,7 @@
             <a href="#"><img src="assets/Twitter.svg"></a>
             <a href="#"><img src="assets/Facebook.svg"></a>
         </div>
+    </div>
     </footer>
 </body>
 <script src="script.js"></script>
